@@ -22,7 +22,7 @@ export default function ResidentialWorkPage() {
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       {/* Cinematic Hero */}
-      <section ref={ref} className="relative h-[60vh] flex items-center justify-center pt-24 px-6 md:px-12 overflow-hidden bg-[#1A1A1A]">
+      <section ref={ref} className="relative h-[60vh] flex items-center justify-center pt-16 md:pt-24 px-6 md:px-12 overflow-hidden bg-[#1A1A1A]">
         <motion.div 
           className="absolute inset-0 z-0"
           style={{ y: backgroundY }}
@@ -47,7 +47,7 @@ export default function ResidentialWorkPage() {
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
             Private Estates & Homes
           </span>
-          <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight">
+          <h1 className="font-serif text-4xl md:text-7xl text-white leading-tight">
             Residential Portfolio
           </h1>
           <p className="text-white/70 text-lg font-light leading-relaxed">
@@ -56,7 +56,7 @@ export default function ResidentialWorkPage() {
         </motion.div>
       </section>
 
-      <div className="pb-24 pt-16 px-6 md:px-12 max-w-7xl mx-auto space-y-16">
+      <div className="pb-16 md:pb-24 pt-12 md:pt-16 px-6 md:px-12 max-w-7xl mx-auto space-y-16">
         {/* Masonry Project Grid */}
         <motion.div layout className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
           <AnimatePresence>

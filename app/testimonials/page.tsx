@@ -29,7 +29,7 @@ export default function TestimonialsPage() {
 
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
-      <section className="pt-48 pb-24 px-6 md:px-12 max-w-4xl mx-auto text-center">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 max-w-4xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,14 +37,14 @@ export default function TestimonialsPage() {
           viewport={{ once: true }}
         >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Client Stories</span>
-          <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Words of Affirmation</h1>
+          <h1 className="font-serif text-4xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Words of Affirmation</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
             The true measure of our work isn't found in photographs, but in the lived experiences of the families and businesses who inhabit the spaces we create.
           </p>
         </motion.div>
       </section>
 
-      <section className="pb-32 px-6 md:px-12">
+      <section className="pb-20 md:pb-32 px-6 md:px-12">
         <div className="max-w-7xl mx-auto columns-1 md:columns-2 gap-8 space-y-8">
           {testimonials.map((t, idx) => (
             <motion.div 
@@ -76,7 +76,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#1A1A1A] text-center px-6">
+      <section className="py-16 md:py-24 bg-[#1A1A1A] text-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }} 
           whileInView={{ opacity: 1, y: 0 }}

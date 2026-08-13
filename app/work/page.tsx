@@ -46,17 +46,17 @@ export default function WorkPage() {
         
         <motion.div 
           style={{ y: textY, opacity }}
-          className="relative z-10 text-center space-y-6 max-w-3xl mx-auto mt-24"
+          className="relative z-10 text-center space-y-4 md:space-y-6 max-w-3xl mx-auto mt-20 md:mt-24"
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           >
-            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
+            <span className="text-[10px] md:text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
               Portfolio Architecture
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight mt-4">
+            <h1 className="font-serif text-4xl md:text-7xl text-white leading-tight mt-2 md:mt-4">
               Curated Works
             </h1>
           </motion.div>
@@ -64,27 +64,27 @@ export default function WorkPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.76, 0, 0.24, 1] }}
-            className="text-white/70 text-lg font-light leading-relaxed"
+            className="text-white/70 text-base md:text-lg font-light leading-relaxed px-4 md:px-0"
           >
             A comprehensive archive of over 100 high-end residential and commercial transformations. Each project is a testament to our dedication to material integrity and spatial harmony.
           </motion.p>
         </motion.div>
       </section>
 
-      <div className="pb-24 pt-16 px-6 md:px-12 max-w-7xl mx-auto space-y-16 relative z-20 bg-white">
+      <div className="pb-16 pt-12 md:pb-24 md:pt-16 px-6 md:px-12 max-w-7xl mx-auto space-y-10 md:space-y-16 relative z-20 bg-white">
 
         {/* Category Filter */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.76, 0, 0.24, 1] }}
-          className="flex flex-wrap justify-center items-center gap-3 md:gap-6"
+          className="flex flex-row overflow-x-auto md:flex-wrap justify-start md:justify-center items-center gap-2 md:gap-6 pb-4 md:pb-0 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0"
         >
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-3 rounded-full text-xs font-mono uppercase tracking-widest transition-all duration-500 ${
+              className={`shrink-0 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-[10px] md:text-xs font-mono uppercase tracking-widest transition-all duration-500 ${
                 activeCategory === cat
                   ? 'bg-[#1A1A1A] text-white shadow-lg shadow-black/10'
                   : 'bg-[#E6E8E3] text-neutral-500 hover:bg-neutral-200 hover:text-[#1A1A1A]'

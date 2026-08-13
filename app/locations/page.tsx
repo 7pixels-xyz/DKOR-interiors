@@ -15,7 +15,7 @@ export default function AllLocationsPage() {
 
   return (
     <div className="bg-[#F7F7F7] min-h-screen">
-      <section className="pt-48 pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,14 +23,14 @@ export default function AllLocationsPage() {
           viewport={{ once: true }}
         >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Global & Local</span>
-          <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Service Areas</h1>
+          <h1 className="font-serif text-4xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Service Areas</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
             While our studio is based in South Florida, we serve elite residential and commercial clients locally, nationally, and internationally.
           </p>
         </motion.div>
       </section>
 
-      <section className="pb-32 px-6 md:px-12 max-w-7xl mx-auto">
+      <section className="pb-20 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {locations.map((loc, idx) => (
             <Link href={`/locations/${loc.slug}`} key={idx}>

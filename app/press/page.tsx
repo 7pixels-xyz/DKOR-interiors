@@ -19,7 +19,7 @@ export default function PressPage() {
 
   return (
     <div className="bg-[#F7F7F7] min-h-screen">
-      <section className="pt-48 pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
+      <section className="pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }} 
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,14 +27,14 @@ export default function PressPage() {
           viewport={{ once: true }}
         >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Media & Recognition</span>
-          <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Press & Awards</h1>
+          <h1 className="font-serif text-4xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Press & Awards</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
             Our commitment to design excellence has been recognized by leading architectural and interior design publications worldwide.
           </p>
         </motion.div>
       </section>
 
-      <section className="py-24 px-6 md:px-12 bg-white">
+      <section className="py-16 md:py-24 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 30 }} 
@@ -68,7 +68,7 @@ export default function PressPage() {
         </div>
       </section>
 
-      <section className="py-24 px-6 md:px-12">
+      <section className="py-16 md:py-24 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 30 }} 
