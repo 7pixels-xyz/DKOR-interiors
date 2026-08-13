@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function PressPage() {
   const awards = [
@@ -20,7 +20,12 @@ export default function PressPage() {
   return (
     <div className="bg-[#F7F7F7] min-h-screen">
       <section className="pt-48 pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
+        >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Media & Recognition</span>
           <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Press & Awards</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
@@ -31,15 +36,23 @@ export default function PressPage() {
 
       <section className="py-24 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="font-serif text-3xl text-[#1A1A1A] mb-12 border-b border-neutral-100 pb-6">Recent Features</h2>
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            viewport={{ once: true }}
+            className="font-serif text-3xl text-[#1A1A1A] mb-12 border-b border-neutral-100 pb-6"
+          >
+            Recent Features
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: idx * 0.1 }}
                 className="group cursor-pointer"
               >
                 <div className="overflow-hidden rounded-xl aspect-[4/5] relative bg-neutral-100">
@@ -57,15 +70,23 @@ export default function PressPage() {
 
       <section className="py-24 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="font-serif text-3xl text-[#1A1A1A] mb-12 border-b border-neutral-200 pb-6">Industry Recognition</h2>
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            viewport={{ once: true }}
+            className="font-serif text-3xl text-[#1A1A1A] mb-12 border-b border-neutral-200 pb-6"
+          >
+            Industry Recognition
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {awards.map((award, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: idx * 0.1 }}
                 className="p-8 border border-neutral-200 bg-white rounded-xl hover:border-[#5C6B57] transition-colors"
               >
                 <div className="w-10 h-10 rounded-full bg-[#E6E8E3] flex items-center justify-center mb-6">

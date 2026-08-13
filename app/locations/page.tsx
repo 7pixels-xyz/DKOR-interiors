@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 
 export default function AllLocationsPage() {
@@ -16,7 +16,12 @@ export default function AllLocationsPage() {
   return (
     <div className="bg-[#F7F7F7] min-h-screen">
       <section className="pt-48 pb-24 px-6 md:px-12 max-w-5xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
+        >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Global & Local</span>
           <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Service Areas</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
@@ -30,10 +35,10 @@ export default function AllLocationsPage() {
           {locations.map((loc, idx) => (
             <Link href={`/locations/${loc.slug}`} key={idx}>
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
+                transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: idx * 0.1 }}
                 className="group cursor-pointer relative overflow-hidden rounded-2xl aspect-square"
               >
                 <img src={loc.img} alt={loc.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />

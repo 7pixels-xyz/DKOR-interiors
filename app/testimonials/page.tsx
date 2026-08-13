@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function TestimonialsPage() {
   const testimonials = [
@@ -30,7 +30,12 @@ export default function TestimonialsPage() {
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       <section className="pt-48 pb-24 px-6 md:px-12 max-w-4xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
+        >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Client Stories</span>
           <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Words of Affirmation</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
@@ -44,10 +49,10 @@ export default function TestimonialsPage() {
           {testimonials.map((t, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: (idx % 2) * 0.2 }}
+              transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: (idx % 2) * 0.2 }}
               className="break-inside-avoid bg-[#F7F7F7] p-10 rounded-2xl relative"
             >
               <div className="text-6xl text-[#E6E8E3] font-serif absolute top-6 left-6 leading-none">"</div>
@@ -72,10 +77,17 @@ export default function TestimonialsPage() {
 
       {/* CTA Section */}
       <section className="py-24 bg-[#1A1A1A] text-center px-6">
-        <h2 className="font-serif text-4xl text-white mb-8">Ready to start your story?</h2>
-        <a href="/contact" className="inline-block bg-[#5C6B57] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-mono hover:bg-white hover:text-[#1A1A1A] transition-colors">
-          Schedule a Consultation
-        </a>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
+        >
+          <h2 className="font-serif text-4xl text-white mb-8">Ready to start your story?</h2>
+          <a href="/contact" className="inline-block bg-[#5C6B57] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-mono hover:bg-white hover:text-[#1A1A1A] transition-colors">
+            Schedule a Consultation
+          </a>
+        </motion.div>
       </section>
     </div>
   );

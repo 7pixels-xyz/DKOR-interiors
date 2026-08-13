@@ -1,12 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { PROJECTS_DATA, Project } from '@/data/projects';
 import ProjectEmblem from '@/components/ProjectEmblem';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
 export default function ResidentialWorkPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   // Filter for residential-related projects
   const filteredProjects = PROJECTS_DATA.filter(
@@ -16,20 +22,26 @@ export default function ResidentialWorkPage() {
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       {/* Cinematic Hero */}
-      <section className="relative h-[60vh] flex items-center justify-center pt-24 px-6 md:px-12 overflow-hidden bg-[#1A1A1A]">
-        <div className="absolute inset-0 z-0">
-          <img 
+      <section ref={ref} className="relative h-[60vh] flex items-center justify-center pt-24 px-6 md:px-12 overflow-hidden bg-[#1A1A1A]">
+        <motion.div 
+          className="absolute inset-0 z-0"
+          style={{ y: backgroundY }}
+        >
+          <motion.img 
             src="/work_hero_modern_architecture_1786600909968.jpg"
             alt="DKOR Portfolio"
             className="w-full h-full object-cover opacity-50 mix-blend-overlay"
+            animate={{ scale: [1, 1.15, 1] }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1A1A1A]/80 to-[#1A1A1A]" />
-        </div>
+        </motion.div>
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
           className="relative z-10 text-center space-y-6 max-w-3xl mx-auto mt-24"
         >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
@@ -52,10 +64,11 @@ export default function ResidentialWorkPage() {
               <motion.div
                 key={p.id}
                 layout
-                initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.5, delay: (idx % 10) * 0.05 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: (idx % 10) * 0.1 }}
                 onClick={() => setSelectedProject(p)}
                 className="break-inside-avoid group cursor-pointer"
               >

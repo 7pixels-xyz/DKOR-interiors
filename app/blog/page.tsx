@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function BlogPage() {
   const articles = [
@@ -31,7 +31,12 @@ export default function BlogPage() {
   return (
     <div className="bg-[#FFFFFF] min-h-screen">
       <section className="pt-48 pb-16 px-6 md:px-12 max-w-5xl mx-auto text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }} 
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          viewport={{ once: true }}
+        >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Journal</span>
           <h1 className="font-serif text-5xl md:text-7xl text-[#1A1A1A] mt-6 leading-tight">Design Insights</h1>
           <p className="text-[#555555] font-light text-lg mt-8 max-w-2xl mx-auto">
@@ -45,10 +50,10 @@ export default function BlogPage() {
           {articles.map((article, idx) => (
             <motion.div 
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: idx * 0.1 }}
               className="group cursor-pointer flex flex-col h-full"
             >
               <div className="overflow-hidden rounded-xl aspect-[4/3] relative mb-6">

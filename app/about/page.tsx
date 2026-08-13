@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const timeline = [
   { year: '2004', event: 'DKOR Interiors Founded by Ivonne Ronderos in North Miami, establishing a new standard for luxury residential design.' },
@@ -12,14 +12,22 @@ const timeline = [
 ];
 
 export default function AboutPage() {
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  const imgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
   return (
-    <div className="bg-[#FFFFFF] min-h-screen pt-32 pb-24">
+    <div className="bg-[#FFFFFF] min-h-screen pt-32 pb-24 overflow-hidden">
       {/* Hero & Manifesto */}
       <section className="px-6 md:px-12 max-w-5xl mx-auto space-y-16">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className="space-y-6 text-center"
         >
           <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">The Studio</span>
@@ -30,23 +38,32 @@ export default function AboutPage() {
         </motion.div>
 
         <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          ref={containerRef}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.2, ease: [0.76, 0, 0.24, 1] }}
           className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-100"
         >
-          <img 
-            src="/about_hero_design_studio_1786600415286.jpg"
-            alt="DKOR Studio"
-            className="w-full h-full object-cover"
-          />
+          <motion.div
+            animate={{ scale: 1.15 }}
+            transition={{ duration: 25, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            className="w-full h-full origin-center"
+          >
+            <motion.img 
+              style={{ y: imgY, scale: 1.1 }}
+              src="/about_hero_design_studio_1786600415286.jpg"
+              alt="DKOR Studio"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
         </motion.div>
 
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
           className="max-w-7xl mx-auto"
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -56,38 +73,36 @@ export default function AboutPage() {
               <p className="text-lg text-[#555555] font-light leading-relaxed">
                 Most designers look at a room and ask, "What can we put here?" We look at a room and ask, "How should this space make you feel?" 
               </p>
-              <img 
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" 
-                alt="Luxury Ambience" 
-                className="w-full h-80 object-cover rounded-2xl shadow-sm mt-8"
-              />
+              <div className="overflow-hidden rounded-2xl shadow-sm mt-8">
+                <motion.img 
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" 
+                  alt="Luxury Ambience" 
+                  className="w-full h-80 object-cover"
+                />
+              </div>
             </div>
 
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#5C6B57]">01. Luxury is Unseen</h3>
-                <p className="text-neutral-600 font-light leading-relaxed">
-                  True luxury isn't just expensive materials. It's the psychological weight of perfect symmetry, acoustic dampening, and the removal of daily friction from your life.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#5C6B57]">02. The Right Client</h3>
-                <p className="text-neutral-600 font-light leading-relaxed">
-                  We do not design for everyone. We design for high-net-worth individuals who understand that their environment is the most important investment they make in their mental well-being.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#5C6B57]">03. Beyond Aesthetics</h3>
-                <p className="text-neutral-600 font-light leading-relaxed">
-                  A beautiful room is the bare minimum. We engineer spaces that lower your heart rate the moment you walk through the door.
-                </p>
-              </div>
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl text-[#5C6B57]">04. Complete Control</h3>
-                <p className="text-neutral-600 font-light leading-relaxed">
-                  From structural architecture to the procurement of the very last hand-woven textile, we maintain absolute control over the execution to ensure the vision is never compromised.
-                </p>
-              </div>
+              {[
+                { n: "01. Luxury is Unseen", d: "True luxury isn't just expensive materials. It's the psychological weight of perfect symmetry, acoustic dampening, and the removal of daily friction from your life." },
+                { n: "02. The Right Client", d: "We do not design for everyone. We design for high-net-worth individuals who understand that their environment is the most important investment they make in their mental well-being." },
+                { n: "03. Beyond Aesthetics", d: "A beautiful room is the bare minimum. We engineer spaces that lower your heart rate the moment you walk through the door." },
+                { n: "04. Complete Control", d: "From structural architecture to the procurement of the very last hand-woven textile, we maintain absolute control over the execution to ensure the vision is never compromised." }
+              ].map((b, idx) => (
+                <motion.div 
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.76, 0, 0.24, 1] }}
+                  className="space-y-4"
+                >
+                  <h3 className="font-serif text-2xl text-[#5C6B57]">{b.n}</h3>
+                  <p className="text-neutral-600 font-light leading-relaxed">{b.d}</p>
+                </motion.div>
+              ))}
             </div>
             
           </div>
@@ -101,18 +116,26 @@ export default function AboutPage() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden"
+            transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
+            className="w-full md:w-1/2 aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer"
           >
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
-              alt="Ivonne Ronderos" 
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-            />
+            <motion.div
+              animate={{ scale: 1.1 }}
+              transition={{ duration: 25, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+              className="w-full h-full"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+                alt="Ivonne Ronderos" 
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-[0.25,1,0.5,1]"
+              />
+            </motion.div>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.76, 0, 0.24, 1] }}
             className="w-full md:w-1/2 space-y-6"
           >
             <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Founder & Principal Designer</span>
@@ -123,7 +146,7 @@ export default function AboutPage() {
               Under her leadership, DKOR Interiors has grown from a boutique Miami firm into a globally recognized studio 
               with over 400 completed projects across 6 countries.
             </p>
-            <p className="text-[#555555] font-light leading-relaxed text-lg">
+            <p className="text-[#555555] font-light leading-relaxed text-lg italic">
               "My ultimate goal is to watch our clients walk into their finished home and realize it is a perfect reflection of who they are."
             </p>
           </motion.div>
@@ -131,27 +154,34 @@ export default function AboutPage() {
       </section>
 
       {/* Interactive Timeline */}
-      <section className="py-24 px-6 md:px-12 max-w-4xl mx-auto space-y-16">
-        <div className="text-center">
-          <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Legacy</span>
-          <h2 className="font-serif text-4xl text-[#1A1A1A] mt-2">20 Years of Excellence</h2>
+      <section className="py-32 px-6 md:px-12 max-w-4xl mx-auto space-y-16">
+        <div className="text-center overflow-hidden">
+          <motion.div
+            initial={{ y: "100%" }}
+            whileInView={{ y: "0%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.76, 0, 0.24, 1] }}
+          >
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Legacy</span>
+            <h2 className="font-serif text-4xl text-[#1A1A1A] mt-2">20 Years of Excellence</h2>
+          </motion.div>
         </div>
 
         <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-neutral-200 before:to-transparent">
           {timeline.map((item, idx) => (
             <motion.div 
               key={item.year}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.76, 0, 0.24, 1] }}
               className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#5C6B57] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm text-white font-mono text-xs z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-[#5C6B57] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm text-white font-mono text-xs z-10 transition-transform duration-500 group-hover:scale-110">
                 {item.year.slice(-2)}
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-[#E6E8E3] rounded-2xl border border-neutral-100 hover:shadow-md transition-shadow">
-                <h3 className="font-serif text-2xl text-[#1A1A1A] mb-2">{item.year}</h3>
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-8 bg-[#E6E8E3] rounded-2xl border border-neutral-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 cursor-default">
+                <h3 className="font-serif text-2xl text-[#1A1A1A] mb-3">{item.year}</h3>
                 <p className="text-[#555555] font-light text-sm leading-relaxed">{item.event}</p>
               </div>
             </motion.div>
