@@ -28,7 +28,7 @@ export default function AllLocationsPage() {
       <section className="pb-32 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {locations.map((loc, idx) => (
-            <Link href={/locations/} key={idx}>
+            <Link href={`/locations/${loc.slug}`} key={idx}>
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

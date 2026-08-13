@@ -50,7 +50,7 @@ export default function LocationPage() {
               Whether you are renovating a coastal penthouse, building a custom estate, or redesigning a commercial workspace, our process is designed to handle the complexity of luxury builds in Sunny Isles, FL. 
             </p>
             <p className="text-[#555555] font-light leading-relaxed text-lg">
-              We manage every aspect of the project—from conceptual architecture and material sourcing to final procurement and installation—ensuring a seamless experience that respects both your time and vision.
+              We manage every aspect of the projectâ€”from conceptual architecture and material sourcing to final procurement and installationâ€”ensuring a seamless experience that respects both your time and vision.
             </p>
             <Link href="/contact" className="inline-flex items-center space-x-2 bg-[#1A1A1A] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest font-mono hover:bg-[#5C6B57] transition-colors mt-4">
               <span>Discuss Your Project</span>
