@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Phone, ArrowUpRight } from 'lucide-react';
+import { Phone, ArrowUpRight, ChevronDown } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,97 +17,173 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  let timeoutId: NodeJS.Timeout;
+
+  const handleMouseEnter = (dropdown: string) => {
+    clearTimeout(timeoutId);
+    setActiveDropdown(dropdown);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutId = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150); // slight delay to prevent flickering
+  };
+
+  const dropdownVariants = {
+    hidden: { opacity: 0, y: -10, scale: 0.95, filter: "blur(10px)" },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1, 
+      filter: "blur(0px)",
+      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] } 
+    },
+    exit: { 
+      opacity: 0, 
+      y: -5, 
+      scale: 0.95, 
+      filter: "blur(5px)",
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] } 
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -10 },
+    visible: (i: number) => ({
+      opacity: 1,
+      x: 0,
+      transition: { delay: i * 0.05 + 0.1, duration: 0.3, ease: "easeOut" }
+    })
+  };
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-neutral-100 text-[#1A1A1A]'
-          : 'bg-gradient-to-b from-black/50 to-transparent py-8 text-white'
+          ? 'bg-white/90 backdrop-blur-xl shadow-sm py-4 border-b border-neutral-100 text-[#1A1A1A]'
+          : 'bg-gradient-to-b from-black/60 to-transparent py-8 text-white'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="group flex flex-col justify-center">
+      <div className="max-w-[90rem] mx-auto px-6 md:px-12 flex items-center justify-between">
+        <Link href="/" className="group flex flex-col justify-center relative z-20">
           <img 
             src="https://res.cloudinary.com/dzepmxuve/image/upload/v1786606490/DKOR_INTERIORS_LOGO_zpo4nh.webp" 
             alt="DKOR Interiors" 
-            className={`h-10 w-auto object-contain transition-all duration-300 ${!scrolled ? 'brightness-0 invert opacity-90' : 'opacity-100'}`}
+            className={`h-10 w-auto object-contain transition-all duration-500 ${!scrolled ? 'brightness-0 invert opacity-100' : 'opacity-100'}`}
           />
         </Link>
 
-        <nav className={`hidden lg:flex items-center space-x-8 text-[10px] xl:text-xs tracking-widest uppercase font-medium transition-colors ${scrolled ? 'text-[#1A1A1A]' : 'text-white'}`}>
-          <Link href="/services" className="hover:text-[#5C6B57] transition-colors py-2">Design Services</Link>
+        <nav className={`hidden lg:flex items-center space-x-10 text-[10px] xl:text-xs tracking-[0.15em] uppercase font-medium transition-colors duration-500 ${scrolled ? 'text-[#1A1A1A]' : 'text-white'}`}>
           
           {/* Design Portfolio Dropdown */}
-          <div className="relative group py-2">
-            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
+          <div 
+            className="relative py-2"
+            onMouseEnter={() => handleMouseEnter('portfolio')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button className="flex items-center gap-1.5 hover:text-[#5C6B57] transition-colors group">
               Design Portfolio
+              <ChevronDown className={`w-3 h-3 transition-transform duration-500 ${activeDropdown === 'portfolio' ? '-rotate-180 text-[#5C6B57]' : ''}`} />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
-              <div className="py-2">
-                <Link href="/work/residential" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Residential</Link>
-                <Link href="/work/commercial" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Commercial</Link>
-              </div>
-            </div>
-          </div>
-
-          {/* By Locations Dropdown */}
-          <div className="relative group py-2">
-            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
-              By Locations
-            </button>
-            <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
-              <div className="py-2">
-                <Link href="/locations/miami" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Miami FL</Link>
-                <Link href="/locations/palm-beach" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Palm Beach FL</Link>
-                <Link href="/locations/ft-lauderdale" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Ft Lauderdale FL</Link>
-                <Link href="/locations/sunny-isles" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Sunny Isles FL</Link>
-                <Link href="/locations/aventura" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Aventura FL</Link>
-                <div className="border-t border-neutral-100 my-1"></div>
-                <Link href="/locations" className="block px-6 py-3 text-xs text-[#1A1A1A] font-semibold hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">All Locations</Link>
-              </div>
-            </div>
+            <AnimatePresence>
+              {activeDropdown === 'portfolio' && (
+                <motion.div 
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  variants={dropdownVariants}
+                  className="absolute top-full left-0 mt-4 w-56 bg-white/95 backdrop-blur-xl border border-neutral-100/50 shadow-2xl rounded-2xl overflow-hidden origin-top-left"
+                >
+                  <div className="p-2">
+                    {[
+                      { href: "/work/residential", label: "Residential" },
+                      { href: "/work/commercial", label: "Commercial" },
+                      { href: "/work", label: "View All Works" }
+                    ].map((item, i) => (
+                      <motion.div key={item.href} custom={i} variants={itemVariants} initial="hidden" animate="visible">
+                        <Link 
+                          href={item.href} 
+                          className="block px-4 py-3 text-[11px] text-[#555555] rounded-xl hover:text-[#5C6B57] hover:bg-neutral-50 hover:pl-6 transition-all duration-300"
+                        >
+                          {item.label}
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
           {/* About Us Dropdown */}
-          <div className="relative group py-2">
-            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
+          <div 
+            className="relative py-2"
+            onMouseEnter={() => handleMouseEnter('about')}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button className="flex items-center gap-1.5 hover:text-[#5C6B57] transition-colors group">
               About Us
+              <ChevronDown className={`w-3 h-3 transition-transform duration-500 ${activeDropdown === 'about' ? '-rotate-180 text-[#5C6B57]' : ''}`} />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
-              <div className="py-2">
-                <Link href="/about" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">About DKOR</Link>
-                <Link href="/press" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Press</Link>
-              </div>
-            </div>
+            <AnimatePresence>
+              {activeDropdown === 'about' && (
+                <motion.div 
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  variants={dropdownVariants}
+                  className="absolute top-full left-0 mt-4 w-56 bg-white/95 backdrop-blur-xl border border-neutral-100/50 shadow-2xl rounded-2xl overflow-hidden origin-top-left"
+                >
+                  <div className="p-2">
+                    {[
+                      { href: "/about", label: "About DKOR" },
+                      { href: "/press", label: "Press & Media" }
+                    ].map((item, i) => (
+                      <motion.div key={item.href} custom={i} variants={itemVariants} initial="hidden" animate="visible">
+                        <Link 
+                          href={item.href} 
+                          className="block px-4 py-3 text-[11px] text-[#555555] rounded-xl hover:text-[#5C6B57] hover:bg-neutral-50 hover:pl-6 transition-all duration-300"
+                        >
+                          {item.label}
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
 
-          <Link href="/testimonials" className="hover:text-[#5C6B57] transition-colors py-2">Testimonials</Link>
-          <Link href="/blog" className="hover:text-[#5C6B57] transition-colors py-2">Blog</Link>
-          <Link href="/contact" className="hover:text-[#5C6B57] transition-colors py-2">Contact Us</Link>
-          
-          <button className="hover:text-[#5C6B57] transition-colors py-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </button>
+          <Link href="/testimonials" className="hover:text-[#5C6B57] transition-colors py-2 relative group">
+            Testimonials
+            <span className="absolute left-0 bottom-0 w-0 h-px bg-[#5C6B57] group-hover:w-full transition-all duration-500" />
+          </Link>
+          <Link href="/contact" className="hover:text-[#5C6B57] transition-colors py-2 relative group">
+            Contact Us
+            <span className="absolute left-0 bottom-0 w-0 h-px bg-[#5C6B57] group-hover:w-full transition-all duration-500" />
+          </Link>
         </nav>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <a
             href="tel:3059812710"
-            className={`hidden sm:flex items-center space-x-2 text-xs font-mono transition-colors ${scrolled ? 'text-neutral-600 hover:text-[#1A1A1A]' : 'text-white/80 hover:text-white'}`}
+            className={`hidden sm:flex items-center space-x-2 text-xs font-mono transition-colors duration-500 hover:text-[#5C6B57] ${scrolled ? 'text-neutral-600' : 'text-white/80'}`}
           >
-            <Phone className="w-3.5 h-3.5 text-[#5C6B57]" />
+            <Phone className="w-3.5 h-3.5" />
             <span>305.981.2710</span>
           </a>
           <Link
             href="/contact"
-            className={`inline-flex items-center space-x-2 text-xs uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-300 ${
+            className={`group inline-flex items-center space-x-2 text-xs uppercase tracking-widest px-6 py-3 rounded-full transition-all duration-500 overflow-hidden relative ${
               scrolled 
-                ? 'bg-[#1A1A1A] hover:bg-[#5C6B57] text-white' 
-                : 'bg-white hover:bg-[#5C6B57] text-[#1A1A1A] hover:text-white'
+                ? 'bg-[#1A1A1A] text-white hover:text-white' 
+                : 'bg-white text-[#1A1A1A] hover:text-white'
             }`}
           >
-            <span>Inquire</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <div className="absolute inset-0 bg-[#5C6B57] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[0.76,0,0.24,1]" />
+            <span className="relative z-10">Inquire</span>
+            <ArrowUpRight className="w-3.5 h-3.5 relative z-10 group-hover:rotate-45 transition-transform duration-500" />
           </Link>
         </div>
       </div>
