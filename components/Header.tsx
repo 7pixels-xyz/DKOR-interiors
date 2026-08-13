@@ -32,12 +32,60 @@ export default function Header() {
           />
         </Link>
 
-        <nav className={`hidden md:flex items-center space-x-10 text-xs tracking-widest uppercase font-medium transition-colors ${scrolled ? 'text-[#1A1A1A]' : 'text-white'}`}>
-          <Link href="/" className="hover:text-[#5C6B57] transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-[#5C6B57] transition-colors">Studio</Link>
-          <Link href="/services" className="hover:text-[#5C6B57] transition-colors">Services</Link>
-          <Link href="/work" className="hover:text-[#5C6B57] transition-colors">Portfolio</Link>
-          <Link href="/contact" className="hover:text-[#5C6B57] transition-colors">Contact</Link>
+        <nav className={`hidden lg:flex items-center space-x-8 text-[10px] xl:text-xs tracking-widest uppercase font-medium transition-colors ${scrolled ? 'text-[#1A1A1A]' : 'text-white'}`}>
+          <Link href="/services" className="hover:text-[#5C6B57] transition-colors py-2">Design Services</Link>
+          
+          {/* Design Portfolio Dropdown */}
+          <div className="relative group py-2">
+            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
+              Design Portfolio
+            </button>
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
+              <div className="py-2">
+                <Link href="/work/residential" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Residential</Link>
+                <Link href="/work/commercial" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Commercial</Link>
+              </div>
+            </div>
+          </div>
+
+          {/* By Locations Dropdown */}
+          <div className="relative group py-2">
+            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
+              By Locations
+            </button>
+            <div className="absolute top-full left-0 mt-2 w-56 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
+              <div className="py-2">
+                <Link href="/locations/miami" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Miami FL</Link>
+                <Link href="/locations/palm-beach" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Palm Beach FL</Link>
+                <Link href="/locations/ft-lauderdale" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Ft Lauderdale FL</Link>
+                <Link href="/locations/sunny-isles" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Sunny Isles FL</Link>
+                <Link href="/locations/aventura" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Aventura FL</Link>
+                <div className="border-t border-neutral-100 my-1"></div>
+                <Link href="/locations" className="block px-6 py-3 text-xs text-[#1A1A1A] font-semibold hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">All Locations</Link>
+              </div>
+            </div>
+          </div>
+
+          {/* About Us Dropdown */}
+          <div className="relative group py-2">
+            <button className="flex items-center hover:text-[#5C6B57] transition-colors">
+              About Us
+            </button>
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-neutral-100 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
+              <div className="py-2">
+                <Link href="/about" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">About DKOR</Link>
+                <Link href="/press" className="block px-6 py-3 text-xs text-[#555555] hover:text-[#5C6B57] hover:bg-neutral-50 transition-colors">Press</Link>
+              </div>
+            </div>
+          </div>
+
+          <Link href="/testimonials" className="hover:text-[#5C6B57] transition-colors py-2">Testimonials</Link>
+          <Link href="/blog" className="hover:text-[#5C6B57] transition-colors py-2">Blog</Link>
+          <Link href="/contact" className="hover:text-[#5C6B57] transition-colors py-2">Contact Us</Link>
+          
+          <button className="hover:text-[#5C6B57] transition-colors py-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </button>
         </nav>
 
         <div className="flex items-center space-x-4">
