@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} bg-[#FFFFFF] text-[#1A1A1A] antialiased`}>
-      <body className="min-h-screen selection:bg-[#C5A059] selection:text-white font-sans overflow-x-hidden">
+      <body className="min-h-screen selection:bg-[#5C6B57] selection:text-white font-sans overflow-x-hidden">
         <LenisProvider>
           <CustomCursor />
           <Header />

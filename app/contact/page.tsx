@@ -36,7 +36,7 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center space-y-6 max-w-3xl mx-auto mt-24"
         >
-          <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">
+          <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
             Direct Consultation
           </span>
           <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight">
@@ -69,21 +69,21 @@ export default function ContactPage() {
               
               <div className="space-y-8 text-sm">
                 <div className="flex items-start space-x-5 group cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#C5A059] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#5C6B57] transition-colors">
                     <MapPin className="w-4 h-4 text-white" />
                   </div>
                   <div className="pt-1">
-                    <p className="font-mono tracking-widest uppercase text-xs text-[#C5A059] mb-1">Location</p>
+                    <p className="font-mono tracking-widest uppercase text-xs text-[#5C6B57] mb-1">Location</p>
                     <p className="text-white/80 font-light leading-relaxed">2079 NE 155th Street<br/>North Miami, FL 33162</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-5 group cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#C5A059] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#5C6B57] transition-colors">
                     <Phone className="w-4 h-4 text-white" />
                   </div>
                   <div className="pt-1">
-                    <p className="font-mono tracking-widest uppercase text-xs text-[#C5A059] mb-1">Direct Line</p>
+                    <p className="font-mono tracking-widest uppercase text-xs text-[#5C6B57] mb-1">Direct Line</p>
                     <a href="tel:3059812710" className="text-white/80 font-light block hover:text-white transition-colors">
                       +1 (305) 981-2710
                     </a>
@@ -91,11 +91,11 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start space-x-5 group cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#C5A059] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-[#5C6B57] transition-colors">
                     <MessageSquare className="w-4 h-4 text-white" />
                   </div>
                   <div className="pt-1">
-                    <p className="font-mono tracking-widest uppercase text-xs text-[#C5A059] mb-1">Instant Messaging</p>
+                    <p className="font-mono tracking-widest uppercase text-xs text-[#5C6B57] mb-1">Instant Messaging</p>
                     <a
                       href="https://wa.me/13059812710"
                       target="_blank"
@@ -122,9 +122,9 @@ export default function ContactPage() {
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="p-12 bg-[#F7F7F7] border border-neutral-100 rounded-[2rem] text-center space-y-6 shadow-sm"
+                  className="p-12 bg-[#E6E8E3] border border-neutral-100 rounded-[2rem] text-center space-y-6 shadow-sm"
                 >
-                  <div className="w-20 h-20 bg-[#1A1A1A] text-[#C5A059] rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#1A1A1A] text-[#5C6B57] rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -144,7 +144,7 @@ export default function ContactPage() {
                           required
                           type="text"
                           placeholder="e.g. Eleanor Vance"
-                          className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
+                          className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
                         />
                       </div>
                       <div className="space-y-3">
@@ -153,7 +153,7 @@ export default function ContactPage() {
                           required
                           type="tel"
                           placeholder="+1 (305) 000-0000"
-                          className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
+                          className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
                         />
                       </div>
                     </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                         required
                         type="email"
                         placeholder="eleanor@example.com"
-                        className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
+                        className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
                       />
                     </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
                             className={`py-4 px-4 text-xs font-mono tracking-wider rounded-xl border-2 transition-all duration-300 ${
                               scope === opt 
                                 ? 'border-[#1A1A1A] bg-[#1A1A1A] text-white' 
-                                : 'border-transparent bg-[#F7F7F7] text-neutral-500 hover:border-[#1A1A1A]/20 hover:bg-white'
+                                : 'border-transparent bg-[#E6E8E3] text-neutral-500 hover:border-[#1A1A1A]/20 hover:bg-white'
                             }`}
                           >
                             {opt}
@@ -195,14 +195,14 @@ export default function ContactPage() {
                           required
                           type="text"
                           placeholder="e.g. Boca Raton, FL"
-                          className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
+                          className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all placeholder:text-neutral-400"
                         />
                       </div>
                       <div className="space-y-3">
                         <label className="text-xs uppercase font-mono tracking-widest text-[#1A1A1A] font-semibold">When are you looking to begin?</label>
                         <select
                           required
-                          className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all text-neutral-600 appearance-none"
+                          className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all text-neutral-600 appearance-none"
                         >
                           <option value="" disabled selected>Select Timeline</option>
                           <option value="immediately">Immediately</option>
@@ -223,8 +223,8 @@ export default function ContactPage() {
                             onClick={() => setBudget(opt)}
                             className={`py-4 px-2 text-[11px] font-mono tracking-widest rounded-xl border-2 transition-all duration-300 ${
                               budget === opt 
-                                ? 'border-[#C5A059] bg-[#C5A059] text-white' 
-                                : 'border-transparent bg-[#F7F7F7] text-neutral-500 hover:border-[#C5A059]/30 hover:bg-white'
+                                ? 'border-[#5C6B57] bg-[#5C6B57] text-white' 
+                                : 'border-transparent bg-[#E6E8E3] text-neutral-500 hover:border-[#5C6B57]/30 hover:bg-white'
                             }`}
                           >
                             {opt}
@@ -239,14 +239,14 @@ export default function ContactPage() {
                         required
                         rows={4}
                         placeholder="Share your vision, challenges, and any specific requirements..."
-                        className="w-full px-5 py-4 bg-[#F7F7F7] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all resize-none placeholder:text-neutral-400 leading-relaxed"
+                        className="w-full px-5 py-4 bg-[#E6E8E3] rounded-xl border-2 border-transparent focus:bg-white focus:border-[#1A1A1A] outline-none text-sm transition-all resize-none placeholder:text-neutral-400 leading-relaxed"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="group w-full py-5 bg-[#1A1A1A] text-white rounded-xl text-xs uppercase tracking-[0.2em] font-mono hover:bg-[#C5A059] transition-all duration-500 flex items-center justify-center gap-4"
+                    className="group w-full py-5 bg-[#1A1A1A] text-white rounded-xl text-xs uppercase tracking-[0.2em] font-mono hover:bg-[#5C6B57] transition-all duration-500 flex items-center justify-center gap-4"
                   >
                     <span>Discuss Your Project</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -62,7 +62,7 @@ export default function ProjectEmblem({ project, onClose }: ProjectEmblemProps) 
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
                 >
-                  <span className="text-[10px] uppercase tracking-widest text-[#C5A059] font-mono bg-black/40 px-3 py-1 rounded-full backdrop-blur-md mb-4 inline-block">
+                  <span className="text-[10px] uppercase tracking-widest text-[#5C6B57] font-mono bg-black/40 px-3 py-1 rounded-full backdrop-blur-md mb-4 inline-block">
                     {project.category} Case Study
                   </span>
                   <h2 className="font-serif text-4xl md:text-6xl text-white leading-tight">
@@ -107,28 +107,28 @@ export default function ProjectEmblem({ project, onClose }: ProjectEmblemProps) 
                 className="max-w-3xl space-y-12"
               >
                 <div>
-                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#C5A059] mb-4">The Brief</h3>
+                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#5C6B57] mb-4">The Brief</h3>
                   <p className="text-[#555555] text-lg leading-relaxed font-light">
                     The client approached us with a desire for a space that felt both expansive and deeply intimate. The goal was to maintain the structural grandeur of the property while introducing elements of grounded, everyday comfort. {project.description}
                   </p>
                 </div>
                 
-                <div className="pl-6 border-l-2 border-[#C5A059]/20">
-                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#C5A059] mb-4">The Challenge</h3>
+                <div className="pl-6 border-l-2 border-[#5C6B57]/20">
+                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#5C6B57] mb-4">The Challenge</h3>
                   <p className="text-[#555555] text-lg leading-relaxed font-light">
                     Balancing scale with warmth. High ceilings and vast open floor plans often create an acoustic and psychological coldness. We needed to bring the scale down to a human level without compromising the architectural integrity of the {project.category.toLowerCase()} design.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#C5A059] mb-4">The Concept</h3>
+                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#5C6B57] mb-4">The Concept</h3>
                   <p className="text-[#555555] text-lg leading-relaxed font-light">
                     We anchored the design in tactile, acoustic dampening materials. By dropping the visual weight toward the lower half of the rooms and introducing heavy textiles, we created gravity. The palette was drawn directly from the surrounding {project.location} landscape.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#C5A059] mb-4">The Execution & Result</h3>
+                  <h3 className="text-xs uppercase tracking-widest font-mono text-[#5C6B57] mb-4">The Execution & Result</h3>
                   <p className="text-[#555555] text-lg leading-relaxed font-light">
                     Over the course of {project.specs.timeline}, we procured custom millwork, curated global art pieces, and oversaw white-glove installation. The resulting {project.specs.sqft} estate is not just visually stunning, but psychologically calming—a true sanctuary that perfectly mirrors the client's lifestyle.
                   </p>
@@ -186,7 +186,7 @@ export default function ProjectEmblem({ project, onClose }: ProjectEmblemProps) 
                 <p className="font-serif text-2xl text-[#1A1A1A]">Inspired by this project?</p>
                 <a 
                   href="/contact" 
-                  className="inline-flex items-center gap-3 text-xs uppercase tracking-widest font-mono bg-[#1A1A1A] text-white px-8 py-4 rounded-full hover:bg-[#C5A059] transition-colors"
+                  className="inline-flex items-center gap-3 text-xs uppercase tracking-widest font-mono bg-[#1A1A1A] text-white px-8 py-4 rounded-full hover:bg-[#5C6B57] transition-colors"
                 >
                   Start Yours <ArrowRight className="w-4 h-4" />
                 </a>

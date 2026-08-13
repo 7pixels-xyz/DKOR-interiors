@@ -52,7 +52,7 @@ export default function HomePage() {
           <motion.div className="pt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
               href="/work"
-              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-white text-[#1A1A1A] px-10 py-5 rounded-full text-sm uppercase tracking-widest hover:bg-[#C5A059] hover:text-white transition-all duration-500"
+              className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-white text-[#1A1A1A] px-10 py-5 rounded-full text-sm uppercase tracking-widest hover:bg-[#5C6B57] hover:text-white transition-all duration-500"
             >
               <span>View Selected Work</span>
               <ArrowDownRight className="w-5 h-5" />
@@ -77,13 +77,13 @@ export default function HomePage() {
           {Array(4).fill(0).map((_, i) => (
             <React.Fragment key={i}>
               <span>Architectural Digest</span>
-              <span className="text-[#C5A059]">•</span>
+              <span className="text-[#5C6B57]">•</span>
               <span>Luxe Gold List</span>
-              <span className="text-[#C5A059]">•</span>
+              <span className="text-[#5C6B57]">•</span>
               <span>HGTV Featured</span>
-              <span className="text-[#C5A059]">•</span>
+              <span className="text-[#5C6B57]">•</span>
               <span>Houzz 500k+ Saves</span>
-              <span className="text-[#C5A059]">•</span>
+              <span className="text-[#5C6B57]">•</span>
             </React.Fragment>
           ))}
         </motion.div>
@@ -99,17 +99,17 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             className="space-y-12"
           >
-            <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
               The Studio Ethos
             </span>
             <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mt-6 leading-tight">
-              We believe that true luxury is <span className="italic text-[#C5A059]">unseen</span> as much as it is seen. It's the psychological weight of perfect symmetry, the acoustic dampening of heavy textiles, and the intuitive flow of a well-architected floor plan.
+              We believe that true luxury is <span className="italic text-[#5C6B57]">unseen</span> as much as it is seen. It's the psychological weight of perfect symmetry, the acoustic dampening of heavy textiles, and the intuitive flow of a well-architected floor plan.
             </h2>
             <p className="text-[#555555] text-lg font-light leading-relaxed">
               Established in North Miami, DKOR Interiors has spent nearly two decades mastering the delicate balance between high-end architectural grandeur and intimate residential comfort. Our award-winning team handles every phase of the design-build process, ensuring absolute cohesion from blueprints to the final curated object.
             </p>
             <div className="mt-12">
-              <Link href="/about" className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#1A1A1A] hover:text-[#C5A059] transition-colors border-b border-black/20 pb-1">
+              <Link href="/about" className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#1A1A1A] hover:text-[#5C6B57] transition-colors border-b border-black/20 pb-1">
                 <span>Read Our Full Story</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
@@ -138,10 +138,10 @@ export default function HomePage() {
       </section>
 
       {/* NEW: Services Teaser Grid */}
-      <section className="py-24 bg-[#F7F7F7]">
+      <section className="py-24 bg-[#E6E8E3]">
         <div className="max-w-[90rem] mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
-            <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">Core Competencies</span>
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Core Competencies</span>
             <h2 className="font-serif text-4xl md:text-6xl text-[#1A1A1A] mt-2">Our Expertise</h2>
           </div>
           
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <div className="relative z-10 p-10">
                   <h3 className="font-serif text-2xl text-white mb-4">{service.title}</h3>
                   <p className="text-white/80 font-light leading-relaxed mb-8">{service.desc}</p>
-                  <Link href="/services" className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#C5A059] group-hover:text-white transition-colors border-b border-[#C5A059]/30 pb-1 group-hover:border-white/50">
+                  <Link href="/services" className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#5C6B57] group-hover:text-white transition-colors border-b border-[#5C6B57]/30 pb-1 group-hover:border-white/50">
                     <span>Explore Service</span>
                     <ArrowUpRight className="w-4 h-4" />
                   </Link>
@@ -185,7 +185,7 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
               Featured Transformations
             </span>
             <h2 className="font-serif text-4xl md:text-6xl text-[#1A1A1A] mt-2">
@@ -199,7 +199,7 @@ export default function HomePage() {
           >
             <Link
               href="/work"
-              className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#1A1A1A] hover:text-[#C5A059] transition-colors border-b border-black/20 pb-1"
+              className="inline-flex items-center space-x-2 text-xs uppercase tracking-widest font-mono text-[#1A1A1A] hover:text-[#5C6B57] transition-colors border-b border-black/20 pb-1"
             >
               <span>View All 100+ Projects</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -228,7 +228,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex justify-between items-start mt-6">
                   <div>
-                    <h3 className="font-serif text-2xl md:text-3xl text-[#1A1A1A] group-hover:text-[#C5A059] transition-colors">
+                    <h3 className="font-serif text-2xl md:text-3xl text-[#1A1A1A] group-hover:text-[#5C6B57] transition-colors">
                       {p.title}
                     </h3>
                     <div className="flex items-center space-x-2 text-xs text-neutral-500 font-mono mt-2">
@@ -236,7 +236,7 @@ export default function HomePage() {
                       <span>{p.location}</span>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono px-3 py-1 bg-[#F7F7F7] uppercase tracking-widest rounded-full text-[#1A1A1A]">
+                  <span className="text-[10px] font-mono px-3 py-1 bg-[#E6E8E3] uppercase tracking-widest rounded-full text-[#1A1A1A]">
                     {p.category}
                   </span>
                 </div>
@@ -250,7 +250,7 @@ export default function HomePage() {
       <section className="py-32 bg-[#1A1A1A] text-white overflow-hidden">
         <div className="max-w-[90rem] mx-auto px-6 md:px-12">
           <div className="text-center mb-24">
-            <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">Our Methodology</span>
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Our Methodology</span>
             <h2 className="font-serif text-4xl md:text-6xl mt-2">The DKOR Process</h2>
           </div>
           
@@ -275,7 +275,7 @@ export default function HomePage() {
                 <div className="w-full aspect-square rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 mx-auto relative group">
                   <img src={step.img} alt={step.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-black/50 backdrop-blur-md border border-[#C5A059] flex items-center justify-center font-serif text-2xl text-white shadow-2xl">
+                    <div className="w-16 h-16 rounded-full bg-black/50 backdrop-blur-md border border-[#5C6B57] flex items-center justify-center font-serif text-2xl text-white shadow-2xl">
                       {idx + 1}
                     </div>
                   </div>
@@ -291,11 +291,11 @@ export default function HomePage() {
       </section>
 
       {/* Material Study */}
-      <section className="py-32 bg-[#F7F7F7]">
+      <section className="py-32 bg-[#E6E8E3]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="space-y-12">
             <div>
-              <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">Design Philosophy</span>
+              <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Design Philosophy</span>
               <h2 className="font-serif text-4xl md:text-6xl text-[#1A1A1A] mt-2 mb-6">Material Integrity</h2>
               <p className="text-neutral-600 font-light text-lg leading-relaxed">
                 The subconscious mind feels quality before the eyes ever see it. We source the world's most authentic, grounding materials to create spaces that aren't just visually stunning, but psychologically calming.
@@ -347,7 +347,7 @@ export default function HomePage() {
       {/* Infinite Testimonials */}
       <section className="py-32 px-6 overflow-hidden">
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">Client Relations</span>
+          <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Client Relations</span>
           <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] mt-2">Enduring Trust</h2>
         </div>
         
@@ -366,7 +366,7 @@ export default function HomePage() {
               { q: "An absolute masterclass in luxury residential design. The best investment we made.", n: "Elena V.", l: "Boca Raton" }
             ].map((t, idx) => (
               <div key={idx} className="w-[350px] sm:w-[450px] p-10 bg-white border border-neutral-100 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] shrink-0">
-                <div className="text-[#C5A059] text-5xl font-serif leading-none mb-4">"</div>
+                <div className="text-[#5C6B57] text-5xl font-serif leading-none mb-4">"</div>
                 <p className="text-[#1A1A1A] font-light text-lg leading-relaxed mb-8">{t.q}</p>
                 <div>
                   <p className="font-mono text-xs font-semibold text-[#1A1A1A] uppercase tracking-widest">{t.n}</p>
@@ -384,7 +384,7 @@ export default function HomePage() {
           
           {/* Principal Designer */}
           <div className="space-y-8">
-            <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">Leadership</span>
+            <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">Leadership</span>
             <div className="flex items-center gap-6 mb-6">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" 
@@ -406,8 +406,8 @@ export default function HomePage() {
 
           {/* Awards Grid */}
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-[#F7F7F7] p-8 rounded-2xl aspect-square flex flex-col justify-center text-center space-y-4">
-              <span className="font-serif text-5xl text-[#C5A059]">500k</span>
+            <div className="bg-[#E6E8E3] p-8 rounded-2xl aspect-square flex flex-col justify-center text-center space-y-4">
+              <span className="font-serif text-5xl text-[#5C6B57]">500k</span>
               <span className="text-xs font-mono uppercase tracking-widest text-[#1A1A1A]">Houzz Saves</span>
             </div>
             <div className="bg-[#1A1A1A] p-8 rounded-2xl aspect-square flex flex-col justify-center text-center space-y-4">
@@ -418,8 +418,8 @@ export default function HomePage() {
               <span className="font-serif text-5xl text-white">20+</span>
               <span className="text-xs font-mono uppercase tracking-widest text-white/70">Years Experience</span>
             </div>
-            <div className="bg-[#F7F7F7] p-8 rounded-2xl aspect-square flex flex-col justify-center text-center space-y-4">
-              <span className="font-serif text-5xl text-[#C5A059]">AD</span>
+            <div className="bg-[#E6E8E3] p-8 rounded-2xl aspect-square flex flex-col justify-center text-center space-y-4">
+              <span className="font-serif text-5xl text-[#5C6B57]">AD</span>
               <span className="text-xs font-mono uppercase tracking-widest text-[#1A1A1A]">Featured Firm</span>
             </div>
           </div>

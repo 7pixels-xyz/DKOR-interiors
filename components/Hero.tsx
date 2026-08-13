@@ -24,7 +24,7 @@ const itemVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden bg-[#F7F7F7]">
+    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden bg-[#E6E8E3]">
       <div className="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#1A1A1A_1px,transparent_1px)] [background-size:24px_24px]" />
       
       <motion.div
@@ -34,7 +34,7 @@ export default function Hero() {
         className="relative z-10 max-w-5xl mx-auto text-center space-y-8"
       >
         <motion.div variants={itemVariants} className="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full bg-white border border-neutral-200 shadow-sm">
-          <span className="w-2 h-2 rounded-full bg-[#C5A059] animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-[#5C6B57] animate-pulse" />
           <span className="text-xs uppercase tracking-widest font-mono text-neutral-600">
             North Miami Studio • High-End Interior Design
           </span>
@@ -52,7 +52,7 @@ export default function Hero() {
         <motion.div variants={itemVariants} className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             href="/work"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest hover:bg-[#C5A059] transition-all duration-300"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest hover:bg-[#5C6B57] transition-all duration-300"
           >
             <span>Explore Portfolio</span>
             <ArrowDownRight className="w-4 h-4" />

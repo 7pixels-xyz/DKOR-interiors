@@ -80,7 +80,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -106,9 +106,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,447 sq ft",
@@ -132,7 +132,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -157,7 +157,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -180,7 +180,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -207,7 +207,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -232,7 +232,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -280,7 +280,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -305,7 +305,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -330,7 +330,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -356,9 +356,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "9,897 sq ft",
@@ -407,7 +407,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -432,7 +432,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -456,9 +456,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "8,976 sq ft",
@@ -505,7 +505,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -532,7 +532,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -555,7 +555,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -605,7 +605,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -656,9 +656,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,887 sq ft",
@@ -732,7 +732,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -782,7 +782,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -805,7 +805,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -831,9 +831,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,065 sq ft",
@@ -905,7 +905,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -932,7 +932,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -957,7 +957,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -981,9 +981,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "4,948 sq ft",
@@ -1007,7 +1007,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1031,9 +1031,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "4,613 sq ft",
@@ -1056,9 +1056,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "7,582 sq ft",
@@ -1081,9 +1081,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "10,130 sq ft",
@@ -1131,9 +1131,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,985 sq ft",
@@ -1157,7 +1157,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1181,9 +1181,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "5,026 sq ft",
@@ -1232,7 +1232,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1256,9 +1256,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "6,128 sq ft",
@@ -1332,7 +1332,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1381,9 +1381,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "9,841 sq ft",
@@ -1405,7 +1405,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1431,9 +1431,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "11,128 sq ft",
@@ -1455,7 +1455,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1481,9 +1481,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,925 sq ft",
@@ -1506,9 +1506,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,762 sq ft",
@@ -1532,7 +1532,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1557,7 +1557,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1580,7 +1580,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1630,7 +1630,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1657,7 +1657,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1682,7 +1682,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1706,9 +1706,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "7,468 sq ft",
@@ -1731,9 +1731,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "4,190 sq ft",
@@ -1755,7 +1755,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1781,9 +1781,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,808 sq ft",
@@ -1831,9 +1831,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "3,060 sq ft",
@@ -1855,7 +1855,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1882,7 +1882,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -1930,7 +1930,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -1955,7 +1955,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -2032,7 +2032,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2056,9 +2056,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "6,991 sq ft",
@@ -2082,7 +2082,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2105,7 +2105,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -2131,9 +2131,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "9,624 sq ft",
@@ -2207,7 +2207,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2257,7 +2257,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2281,9 +2281,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "10,340 sq ft",
@@ -2332,7 +2332,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2356,9 +2356,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end coastal design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "9,084 sq ft",
@@ -2382,7 +2382,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2405,7 +2405,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     "description": "A masterclass in high-end residential design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
-      "#F7F7F7",
+      "#E6E8E3",
       "#EAEAEA",
       "#333333",
       "#D4AF37"
@@ -2431,9 +2431,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end penthouse design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "7,930 sq ft",
@@ -2457,7 +2457,7 @@ export const PROJECTS_DATA: Project[] = [
     "palette": [
       "#1A1A1A",
       "#555555",
-      "#C5A059",
+      "#5C6B57",
       "#FFFFFF"
     ],
     "specs": {
@@ -2481,9 +2481,9 @@ export const PROJECTS_DATA: Project[] = [
     "description": "A masterclass in high-end commercial design. This property features bespoke spatial planning, hand-selected imported materials, and custom-tailored architectural accents that define modern luxury living. Every detail was meticulously curated to evoke emotion and provide frictionless living.",
     "palette": [
       "#FFFFFF",
-      "#F7F7F7",
+      "#E6E8E3",
       "#1A1A1A",
-      "#C5A059"
+      "#5C6B57"
     ],
     "specs": {
       "sqft": "6,474 sq ft",

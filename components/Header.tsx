@@ -33,11 +33,11 @@ export default function Header() {
         </Link>
 
         <nav className={`hidden md:flex items-center space-x-10 text-xs tracking-widest uppercase font-medium transition-colors ${scrolled ? 'text-[#1A1A1A]' : 'text-white'}`}>
-          <Link href="/" className="hover:text-[#C5A059] transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-[#C5A059] transition-colors">Studio</Link>
-          <Link href="/services" className="hover:text-[#C5A059] transition-colors">Services</Link>
-          <Link href="/work" className="hover:text-[#C5A059] transition-colors">Portfolio</Link>
-          <Link href="/contact" className="hover:text-[#C5A059] transition-colors">Contact</Link>
+          <Link href="/" className="hover:text-[#5C6B57] transition-colors">Home</Link>
+          <Link href="/about" className="hover:text-[#5C6B57] transition-colors">Studio</Link>
+          <Link href="/services" className="hover:text-[#5C6B57] transition-colors">Services</Link>
+          <Link href="/work" className="hover:text-[#5C6B57] transition-colors">Portfolio</Link>
+          <Link href="/contact" className="hover:text-[#5C6B57] transition-colors">Contact</Link>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -45,15 +45,15 @@ export default function Header() {
             href="tel:3059812710"
             className={`hidden sm:flex items-center space-x-2 text-xs font-mono transition-colors ${scrolled ? 'text-neutral-600 hover:text-[#1A1A1A]' : 'text-white/80 hover:text-white'}`}
           >
-            <Phone className="w-3.5 h-3.5 text-[#C5A059]" />
+            <Phone className="w-3.5 h-3.5 text-[#5C6B57]" />
             <span>305.981.2710</span>
           </a>
           <Link
             href="/contact"
             className={`inline-flex items-center space-x-2 text-xs uppercase tracking-wider px-5 py-2.5 rounded-full transition-all duration-300 ${
               scrolled 
-                ? 'bg-[#1A1A1A] hover:bg-[#C5A059] text-white' 
-                : 'bg-white hover:bg-[#C5A059] text-[#1A1A1A] hover:text-white'
+                ? 'bg-[#1A1A1A] hover:bg-[#5C6B57] text-white' 
+                : 'bg-white hover:bg-[#5C6B57] text-[#1A1A1A] hover:text-white'
             }`}
           >
             <span>Inquire</span>

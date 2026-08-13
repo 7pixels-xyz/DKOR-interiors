@@ -34,7 +34,7 @@ export default function WorkPage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative z-10 text-center space-y-6 max-w-3xl mx-auto mt-24"
         >
-          <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">
+          <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
             Portfolio Architecture
           </span>
           <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight">
@@ -62,7 +62,7 @@ export default function WorkPage() {
               className={`px-6 py-3 rounded-full text-xs font-mono uppercase tracking-widest transition-all duration-300 ${
                 activeCategory === cat
                   ? 'bg-[#1A1A1A] text-white shadow-lg shadow-black/10'
-                  : 'bg-[#F7F7F7] text-neutral-500 hover:bg-neutral-200 hover:text-[#1A1A1A]'
+                  : 'bg-[#E6E8E3] text-neutral-500 hover:bg-neutral-200 hover:text-[#1A1A1A]'
               }`}
             >
               {cat}
@@ -98,7 +98,7 @@ export default function WorkPage() {
                   </div>
                 </div>
                 <div className="mt-4 px-2">
-                  <h3 className="font-serif text-xl text-[#1A1A1A] group-hover:text-[#C5A059] transition-colors">{p.title}</h3>
+                  <h3 className="font-serif text-xl text-[#1A1A1A] group-hover:text-[#5C6B57] transition-colors">{p.title}</h3>
                   <p className="text-[11px] uppercase tracking-widest text-neutral-400 font-mono mt-1">{p.location}</p>
                 </div>
               </motion.div>

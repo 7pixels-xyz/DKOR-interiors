@@ -22,11 +22,11 @@ export default function Footer() {
             </Link>
             <h2 className="font-serif text-5xl md:text-7xl leading-[1.1]">
               Let's discuss your <br/>
-              <span className="italic text-[#C5A059]">next project.</span>
+              <span className="italic text-[#5C6B57]">next project.</span>
             </h2>
             <a
               href="mailto:hello@dkorinteriors.com"
-              className="inline-flex items-center gap-4 text-2xl font-light hover:text-[#C5A059] transition-colors border-b border-white/20 hover:border-[#C5A059] pb-4"
+              className="inline-flex items-center gap-4 text-2xl font-light hover:text-[#5C6B57] transition-colors border-b border-white/20 hover:border-[#5C6B57] pb-4"
             >
               hello@dkorinteriors.com <ArrowUpRight className="w-6 h-6" />
             </a>
@@ -39,9 +39,9 @@ export default function Footer() {
                 <input 
                   type="email" 
                   placeholder="Email Address" 
-                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#C5A059] transition-colors text-sm"
+                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#5C6B57] transition-colors text-sm"
                 />
-                <button type="submit" className="border-b border-white/20 hover:border-[#C5A059] px-2 text-[#C5A059] transition-colors">
+                <button type="submit" className="border-b border-white/20 hover:border-[#5C6B57] px-2 text-[#5C6B57] transition-colors">
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </form>
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="lg:col-span-2 lg:col-start-7 space-y-6">
-            <h4 className="text-xs uppercase tracking-widest text-[#C5A059] font-semibold">Explore</h4>
+            <h4 className="text-xs uppercase tracking-widest text-[#5C6B57] font-semibold">Explore</h4>
             <nav className="flex flex-col gap-4 text-sm font-light text-white/70">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <Link href="/about" className="hover:text-white transition-colors">The Studio</Link>
@@ -62,7 +62,7 @@ export default function Footer() {
 
           {/* Contact Details */}
           <div className="lg:col-span-2 space-y-6">
-            <h4 className="text-xs uppercase tracking-widest text-[#C5A059] font-semibold">Headquarters</h4>
+            <h4 className="text-xs uppercase tracking-widest text-[#5C6B57] font-semibold">Headquarters</h4>
             <address className="not-italic text-white/70 text-sm leading-loose font-light">
               2079 NE 155th Street,<br />
               North Miami, FL 33162<br />
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Social */}
           <div className="lg:col-span-2 space-y-6">
-            <h4 className="text-xs uppercase tracking-widest text-[#C5A059] font-semibold">Connect</h4>
+            <h4 className="text-xs uppercase tracking-widest text-[#5C6B57] font-semibold">Connect</h4>
             <div className="flex flex-col gap-4 text-sm text-white/70 font-light">
               <a href="#" className="hover:text-white transition-colors flex items-center gap-3">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -82,7 +82,7 @@ export default function Footer() {
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 Facebook
               </a>
-              <a href="https://wa.me/13059812710" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition-colors flex items-center gap-3">
+              <a href="https://wa.me/13059812710" target="_blank" rel="noopener noreferrer" className="hover:text-[#5C6B57] transition-colors flex items-center gap-3">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" /></svg>
                 WhatsApp
               </a>

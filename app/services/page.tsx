@@ -43,7 +43,7 @@ export default function ServicesPage() {
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center space-y-6 max-w-4xl mx-auto mt-24"
         >
-          <span className="text-xs uppercase tracking-widest font-mono text-[#C5A059]">
+          <span className="text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
             Our Capabilities
           </span>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight">
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-16 lg:gap-24 items-center`}
           >
             <div className="w-full lg:w-1/2 space-y-8">
-              <span className="text-[#C5A059] font-mono text-sm tracking-widest uppercase">0{index + 1}</span>
+              <span className="text-[#5C6B57] font-mono text-sm tracking-widest uppercase">0{index + 1}</span>
               <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A]">{service.title}</h2>
               <p className="text-[#555555] text-lg font-light leading-relaxed">
                 {service.desc}
@@ -76,8 +76,8 @@ export default function ServicesPage() {
               <ul className="space-y-4 pt-4">
                 {service.features.map((feature, fIdx) => (
                   <li key={fIdx} className="flex items-center gap-4 text-sm font-mono uppercase tracking-widest text-[#1A1A1A]">
-                    <span className="w-6 h-6 rounded-full bg-[#F7F7F7] flex items-center justify-center shrink-0">
-                      <Check className="w-3 h-3 text-[#C5A059]" />
+                    <span className="w-6 h-6 rounded-full bg-[#E6E8E3] flex items-center justify-center shrink-0">
+                      <Check className="w-3 h-3 text-[#5C6B57]" />
                     </span>
                     {feature}
                   </li>
@@ -99,7 +99,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#F7F7F7] py-32 px-6 text-center">
+      <section className="bg-[#E6E8E3] py-32 px-6 text-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -113,7 +113,7 @@ export default function ServicesPage() {
           <div className="pt-8">
             <Link 
               href="/contact"
-              className="inline-flex items-center gap-4 px-10 py-5 bg-[#1A1A1A] text-white rounded-full text-xs uppercase tracking-widest font-mono hover:bg-[#C5A059] transition-all duration-300"
+              className="inline-flex items-center gap-4 px-10 py-5 bg-[#1A1A1A] text-white rounded-full text-xs uppercase tracking-widest font-mono hover:bg-[#5C6B57] transition-all duration-300"
             >
               Request Consultation <ArrowRight className="w-4 h-4" />
             </Link>
