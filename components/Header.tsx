@@ -57,14 +57,14 @@ export default function Header() {
       y: 0, 
       scale: 1, 
       filter: "blur(0px)",
-      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] } 
+      transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] as any } 
     },
     exit: { 
       opacity: 0, 
       y: -5, 
       scale: 0.95, 
       filter: "blur(5px)",
-      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] } 
+      transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1] as any } 
     }
   };
 
@@ -73,7 +73,7 @@ export default function Header() {
     visible: (i: number) => ({
       opacity: 1,
       x: 0,
-      transition: { delay: i * 0.05 + 0.1, duration: 0.3, ease: "easeOut" }
+      transition: { delay: i * 0.05 + 0.1, duration: 0.3, ease: "easeOut" as any }
     })
   };
 
@@ -82,12 +82,12 @@ export default function Header() {
     visible: { 
       opacity: 1, 
       clipPath: "circle(150% at top right)",
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] }
+      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] as any }
     },
     exit: { 
       opacity: 0, 
       clipPath: "circle(0% at top right)",
-      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] }
+      transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] as any }
     }
   };
 
@@ -96,7 +96,7 @@ export default function Header() {
     visible: (i: number) => ({
       opacity: 1, 
       y: 0,
-      transition: { delay: 0.3 + (i * 0.1), duration: 0.6, ease: [0.76, 0, 0.24, 1] }
+      transition: { delay: 0.3 + (i * 0.1), duration: 0.6, ease: [0.76, 0, 0.24, 1] as any }
     })
   };
 
