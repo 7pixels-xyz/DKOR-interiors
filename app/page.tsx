@@ -148,11 +148,11 @@ export default function HomePage() {
             <span className="text-[10px] md:text-xs uppercase tracking-widest font-mono text-[#5C6B57]">
               The Studio Ethos
             </span>
-            <h2 className="font-serif text-3xl md:text-5xl text-[#1A1A1A] mt-4 md:mt-6 leading-tight">
-              We believe that true luxury is <span className="italic text-[#5C6B57]">unseen</span> as much as it is seen. It's the psychological weight of perfect symmetry, the acoustic dampening of heavy textiles, and the intuitive flow of a well-architected floor plan.
+            <h2 className="text-3xl md:text-5xl text-[#1A1A1A] mt-4 md:mt-6 leading-tight tracking-tight font-light" style={{ fontFamily: 'Inter, sans-serif' }}>
+              Designing the <span className="italic text-[#5C6B57]" style={{ fontFamily: '"Times New Roman MT", "Times New Roman", serif', fontSize: '1.1em' }}>extraordinary</span> through an obsession with <span className="italic text-[#5C6B57]" style={{ fontFamily: '"Times New Roman MT", "Times New Roman", serif', fontSize: '1.1em' }}>authenticity</span> and detail.
             </h2>
-            <p className="text-[#555555] text-base md:text-lg font-light leading-relaxed">
-              Established in North Miami, DKOR Interiors has spent nearly two decades mastering the delicate balance between high-end architectural grandeur and intimate residential comfort. Our award-winning team handles every phase of the design-build process, ensuring absolute cohesion from blueprints to the final curated object.
+            <p className="text-[#555555] text-base md:text-lg font-light leading-relaxed mt-6" style={{ fontFamily: 'Inter, sans-serif' }}>
+              For over two decades, DKOR Interiors has redefined luxury residential and commercial design from our North Miami studio. We believe your space should be a physical manifestation of your deepest aspirations. By meticulously balancing <span className="italic text-[#1A1A1A]" style={{ fontFamily: '"Times New Roman MT", "Times New Roman", serif', fontSize: '1.05em' }}>architectural grandeur</span> with intuitive, intimate comfort, our award-winning team architects environments that don't just look flawless—they profoundly enhance the way you live, work, and feel every single day.
             </p>
             <div className="mt-8 md:mt-12">
               <Link href="/about" className="group inline-flex items-center space-x-2 text-[10px] md:text-xs uppercase tracking-widest font-mono text-[#1A1A1A] hover:text-[#5C6B57] transition-colors border-b border-black/20 pb-1">
